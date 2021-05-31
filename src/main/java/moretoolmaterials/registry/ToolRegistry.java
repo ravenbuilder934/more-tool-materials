@@ -1,5 +1,7 @@
-package moretoolmaterials;
+package moretoolmaterials.registry;
 
+import moretoolmaterials.MoreToolMaterials;
+import moretoolmaterials.item.ModItemTiers;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;

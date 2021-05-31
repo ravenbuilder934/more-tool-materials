@@ -1,4 +1,4 @@
-package moretoolmaterials;
+package moretoolmaterials.item;
 
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Items;
