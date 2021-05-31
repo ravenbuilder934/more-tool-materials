@@ -13,7 +13,7 @@ public class MoreToolMaterials
     public MoreToolMaterials()
     {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        ItemRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        ToolRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
     private void setup(final FMLCommonSetupEvent event)

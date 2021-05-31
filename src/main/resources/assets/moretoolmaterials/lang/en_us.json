@@ -1,3 +1,6 @@
 {
-  "entity.moretoolmaterials.moretoolmaterials": "Soul Blaze"
+  "item.moretoolmaterials.emerald_pickaxe": "Emerald Pickaxe",
+  "item.moretoolmaterials.lapis_pickaxe": "Lapis Lazuli Pickaxe",
+  "item.moretoolmaterials.obsidian_pickaxe": "Obsidian Pickaxe",
+  "item.moretoolmaterials.redstone_pickaxe": "Redstone Pickaxe"
 }
