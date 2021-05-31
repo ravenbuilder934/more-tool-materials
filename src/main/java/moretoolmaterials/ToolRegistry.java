@@ -14,4 +14,8 @@ public class ToolRegistry
     public static final RegistryObject<PickaxeItem> OBSIDIAN_PICKAXE = ITEMS.register("obsidian_pickaxe", () -> new PickaxeItem(ModItemTiers.OBSIDIAN, 1, -2.8F, (new Item.Properties()).tab(ItemGroup.TAB_TOOLS)));
     public static final RegistryObject<PickaxeItem> REDSTONE_PICKAXE = ITEMS.register("redstone_pickaxe", () -> new PickaxeItem(ModItemTiers.REDSTONE, 1, -2.8F, (new Item.Properties()).tab(ItemGroup.TAB_TOOLS)));
 
+    public static final RegistryObject<ShovelItem> EMERALD_SHOVEL = ITEMS.register("emerald_shovel", () -> new ShovelItem(ModItemTiers.EMERALD, 1.5F, -3.0F, (new Item.Properties()).tab(ItemGroup.TAB_TOOLS)));
+    public static final RegistryObject<ShovelItem> LAPIS_SHOVEL = ITEMS.register("lapis_shovel", () -> new ShovelItem(ModItemTiers.LAPIS, 1.5F, -3.0F, (new Item.Properties()).tab(ItemGroup.TAB_TOOLS)));
+    public static final RegistryObject<ShovelItem> OBSIDIAN_SHOVEL = ITEMS.register("obsidian_shovel", () -> new ShovelItem(ModItemTiers.OBSIDIAN, 1.5F, -3.0F, (new Item.Properties()).tab(ItemGroup.TAB_TOOLS)));
+    public static final RegistryObject<ShovelItem> REDSTONE_SHOVEL = ITEMS.register("redstone_shovel", () -> new ShovelItem(ModItemTiers.REDSTONE, 1.5F, -3.0F, (new Item.Properties()).tab(ItemGroup.TAB_TOOLS)));
 }
