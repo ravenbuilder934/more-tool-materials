@@ -26,10 +26,10 @@ public class ModLanguageProvider extends LanguageProvider
         addItem(ToolRegistry.OBSIDIAN_SHOVEL, "Obsidian Shovel");
         addItem(ToolRegistry.REDSTONE_SHOVEL, "Redstone Shovel");
 
-        //addItem(ToolRegistry.EMERALD_HOE, "Emerald Hoe");
-        //addItem(ToolRegistry.LAPIS_HOE, "Lapis Lazuli Hoe");
-        //addItem(ToolRegistry.OBSIDIAN_HOE, "Obsidian Hoe");
-        //addItem(ToolRegistry.REDSTONE_HOE, "Redstone Hoe");
+        addItem(ToolRegistry.EMERALD_HOE, "Emerald Hoe");
+        addItem(ToolRegistry.LAPIS_HOE, "Lapis Lazuli Hoe");
+        addItem(ToolRegistry.OBSIDIAN_HOE, "Obsidian Hoe");
+        addItem(ToolRegistry.REDSTONE_HOE, "Redstone Hoe");
     }
     
 }

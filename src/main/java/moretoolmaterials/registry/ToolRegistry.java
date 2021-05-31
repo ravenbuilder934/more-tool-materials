@@ -20,4 +20,9 @@ public class ToolRegistry
     public static final RegistryObject<ShovelItem> LAPIS_SHOVEL = ITEMS.register("lapis_shovel", () -> new ShovelItem(ModItemTiers.LAPIS, 1.5F, -3.0F, (new Item.Properties()).tab(ItemGroup.TAB_TOOLS)));
     public static final RegistryObject<ShovelItem> OBSIDIAN_SHOVEL = ITEMS.register("obsidian_shovel", () -> new ShovelItem(ModItemTiers.OBSIDIAN, 1.5F, -3.0F, (new Item.Properties()).tab(ItemGroup.TAB_TOOLS)));
     public static final RegistryObject<ShovelItem> REDSTONE_SHOVEL = ITEMS.register("redstone_shovel", () -> new ShovelItem(ModItemTiers.REDSTONE, 1.5F, -3.0F, (new Item.Properties()).tab(ItemGroup.TAB_TOOLS)));
+
+    public static final RegistryObject<HoeItem> EMERALD_HOE = ITEMS.register("emerald_hoe", () -> new HoeItem(ModItemTiers.EMERALD, -3, 0.0F, (new Item.Properties()).tab(ItemGroup.TAB_TOOLS)));
+    public static final RegistryObject<HoeItem> LAPIS_HOE = ITEMS.register("lapis_hoe", () -> new HoeItem(ModItemTiers.LAPIS, -3, 0.0F, (new Item.Properties()).tab(ItemGroup.TAB_TOOLS)));
+    public static final RegistryObject<HoeItem> OBSIDIAN_HOE = ITEMS.register("obsidian_hoe", () -> new HoeItem(ModItemTiers.OBSIDIAN, -3, 0.0F, (new Item.Properties()).tab(ItemGroup.TAB_TOOLS)));
+    public static final RegistryObject<HoeItem> REDSTONE_HOE = ITEMS.register("redstone_hoe", () -> new HoeItem(ModItemTiers.REDSTONE, -3, 0.0F, (new Item.Properties()).tab(ItemGroup.TAB_TOOLS)));
 }

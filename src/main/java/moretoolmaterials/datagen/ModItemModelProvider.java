@@ -32,10 +32,10 @@ public class ModItemModelProvider extends ItemModelProvider
         toolItem(ToolRegistry.OBSIDIAN_SHOVEL);
         toolItem(ToolRegistry.REDSTONE_SHOVEL);
 
-        //toolItem(ToolRegistry.EMERALD_HOE);
-        //toolItem(ToolRegistry.LAPIS_HOE);
-        //toolItem(ToolRegistry.OBSIDIAN_HOE);
-        //toolItem(ToolRegistry.REDSTONE_HOE);
+        toolItem(ToolRegistry.EMERALD_HOE);
+        toolItem(ToolRegistry.LAPIS_HOE);
+        toolItem(ToolRegistry.OBSIDIAN_HOE);
+        toolItem(ToolRegistry.REDSTONE_HOE);
     }
 
     public void toolItem(Supplier<? extends Item> itemSupplier)
