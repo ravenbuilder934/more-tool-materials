@@ -16,6 +16,11 @@ public class ModLanguageProvider extends LanguageProvider
     @Override
     protected void addTranslations() 
     {
+        addItem(ToolRegistry.EMERALD_SWORD, "Emerald Sword");
+        addItem(ToolRegistry.LAPIS_SWORD, "Lapis Lazuli Sword");
+        addItem(ToolRegistry.OBSIDIAN_SWORD, "Obsidian Sword");
+        addItem(ToolRegistry.REDSTONE_SWORD, "Redstone Sword");
+
         addItem(ToolRegistry.EMERALD_SHOVEL, "Emerald Shovel");
         addItem(ToolRegistry.LAPIS_SHOVEL, "Lapis Lazuli Shovel");
         addItem(ToolRegistry.OBSIDIAN_SHOVEL, "Obsidian Shovel");

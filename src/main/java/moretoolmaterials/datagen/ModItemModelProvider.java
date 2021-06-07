@@ -22,6 +22,11 @@ public class ModItemModelProvider extends ItemModelProvider
     @Override
     protected void registerModels() 
     {
+        toolItem(ToolRegistry.EMERALD_SWORD);
+        toolItem(ToolRegistry.LAPIS_SWORD);
+        toolItem(ToolRegistry.OBSIDIAN_SWORD);
+        toolItem(ToolRegistry.REDSTONE_SWORD);
+
         toolItem(ToolRegistry.EMERALD_SHOVEL);
         toolItem(ToolRegistry.LAPIS_SHOVEL);
         toolItem(ToolRegistry.OBSIDIAN_SHOVEL);

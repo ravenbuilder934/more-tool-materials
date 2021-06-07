@@ -11,6 +11,11 @@ public class ToolRegistry
 {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MoreToolMaterials.MOD_ID);
 
+    public static final RegistryObject<SwordItem> EMERALD_SWORD = ITEMS.register("emerald_sword", () -> new SwordItem(ModItemTiers.EMERALD, 3, -2.4F, (new Item.Properties()).group(ItemGroup.COMBAT)));
+    public static final RegistryObject<SwordItem> LAPIS_SWORD = ITEMS.register("lapis_sword", () -> new SwordItem(ModItemTiers.LAPIS, 3, -2.4F, (new Item.Properties()).group(ItemGroup.COMBAT)));
+    public static final RegistryObject<SwordItem> OBSIDIAN_SWORD = ITEMS.register("obsidian_sword", () -> new SwordItem(ModItemTiers.OBSIDIAN, 3, -2.4F, (new Item.Properties()).group(ItemGroup.COMBAT)));
+    public static final RegistryObject<SwordItem> REDSTONE_SWORD = ITEMS.register("redstone_sword", () -> new SwordItem(ModItemTiers.REDSTONE, 3, -2.4F, (new Item.Properties()).group(ItemGroup.COMBAT)));
+
     public static final RegistryObject<ShovelItem> EMERALD_SHOVEL = ITEMS.register("emerald_shovel", () -> new ShovelItem(ModItemTiers.EMERALD, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroup.TOOLS)));
     public static final RegistryObject<ShovelItem> LAPIS_SHOVEL = ITEMS.register("lapis_shovel", () -> new ShovelItem(ModItemTiers.LAPIS, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroup.TOOLS)));
     public static final RegistryObject<ShovelItem> OBSIDIAN_SHOVEL = ITEMS.register("obsidian_shovel", () -> new ShovelItem(ModItemTiers.OBSIDIAN, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroup.TOOLS)));
