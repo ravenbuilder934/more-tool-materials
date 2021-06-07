@@ -5,16 +5,16 @@ import moretoolmaterials.registry.ToolRegistry;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
 
-public class ModLanguageProvider extends LanguageProvider 
+public class ModLanguageProvider extends LanguageProvider
 {
 
-    public ModLanguageProvider(DataGenerator generatorIn) 
+    public ModLanguageProvider(DataGenerator generatorIn)
     {
         super(generatorIn, MoreToolMaterials.MOD_ID, "en_us");
     }
 
     @Override
-    protected void addTranslations() 
+    protected void addTranslations()
     {
         addItem(ToolRegistry.EMERALD_SWORD, "Emerald Sword");
         addItem(ToolRegistry.LAPIS_SWORD, "Lapis Lazuli Sword");
@@ -41,5 +41,5 @@ public class ModLanguageProvider extends LanguageProvider
         addItem(ToolRegistry.OBSIDIAN_HOE, "Obsidian Hoe");
         addItem(ToolRegistry.REDSTONE_HOE, "Redstone Hoe");
     }
-    
+
 }

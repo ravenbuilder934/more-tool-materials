@@ -11,7 +11,7 @@ public class GatherData
         DataGenerator generator = event.getGenerator();
         ExistingFileHelper helper = event.getExistingFileHelper();
 
-        if(event.includeClient())
+        if (event.includeClient())
         {
             generator.addProvider(new ModLanguageProvider(generator));
             generator.addProvider(new ModItemModelProvider(generator, helper));

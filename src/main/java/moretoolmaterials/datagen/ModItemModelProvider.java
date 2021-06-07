@@ -11,16 +11,16 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 
 import java.util.function.Supplier;
 
-public class ModItemModelProvider extends ItemModelProvider 
+public class ModItemModelProvider extends ItemModelProvider
 {
 
-    public ModItemModelProvider(DataGenerator generatorIn, ExistingFileHelper helperIn) 
+    public ModItemModelProvider(DataGenerator generatorIn, ExistingFileHelper helperIn)
     {
         super(generatorIn, MoreToolMaterials.MOD_ID, helperIn);
     }
 
     @Override
-    protected void registerModels() 
+    protected void registerModels()
     {
         toolItem(ToolRegistry.EMERALD_SWORD);
         toolItem(ToolRegistry.LAPIS_SWORD);
