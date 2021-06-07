@@ -22,15 +22,20 @@ public class ModItemModelProvider extends ItemModelProvider
     @Override
     protected void registerModels() 
     {
-        toolItem(ToolRegistry.EMERALD_PICKAXE);
-        toolItem(ToolRegistry.LAPIS_PICKAXE);
-        toolItem(ToolRegistry.OBSIDIAN_PICKAXE);
-        toolItem(ToolRegistry.REDSTONE_PICKAXE);
-        
         toolItem(ToolRegistry.EMERALD_SHOVEL);
         toolItem(ToolRegistry.LAPIS_SHOVEL);
         toolItem(ToolRegistry.OBSIDIAN_SHOVEL);
         toolItem(ToolRegistry.REDSTONE_SHOVEL);
+
+        toolItem(ToolRegistry.EMERALD_PICKAXE);
+        toolItem(ToolRegistry.LAPIS_PICKAXE);
+        toolItem(ToolRegistry.OBSIDIAN_PICKAXE);
+        toolItem(ToolRegistry.REDSTONE_PICKAXE);
+
+        toolItem(ToolRegistry.EMERALD_AXE);
+        toolItem(ToolRegistry.LAPIS_AXE);
+        toolItem(ToolRegistry.OBSIDIAN_AXE);
+        toolItem(ToolRegistry.REDSTONE_AXE);
 
         toolItem(ToolRegistry.EMERALD_HOE);
         toolItem(ToolRegistry.LAPIS_HOE);

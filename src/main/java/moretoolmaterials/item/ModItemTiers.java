@@ -11,19 +11,19 @@ public enum ModItemTiers implements IItemTier
 {
     EMERALD(3, 1561, 8.0F, 3.0F, 15, () ->
     {
-        return Ingredient.of(Items.EMERALD);
+        return Ingredient.fromItems(Items.EMERALD);
     }),
     LAPIS(2, 250, 7.0F, 2.5F, 25, () ->
     {
-        return Ingredient.of(Items.LAPIS_LAZULI);
+        return Ingredient.fromItems(Items.LAPIS_LAZULI);
     }),
     OBSIDIAN(4, 2031, 6.0F, 4.0F, 5, () ->
     {
-        return Ingredient.of(Items.OBSIDIAN);
+        return Ingredient.fromItems(Items.OBSIDIAN);
     }),
     REDSTONE(2, 250, 12.5F, 2.0F, 10, () ->
     {
-        return Ingredient.of(Items.REDSTONE);
+        return Ingredient.fromItems(Items.REDSTONE);
     });
 
     private final int level;
@@ -33,43 +33,43 @@ public enum ModItemTiers implements IItemTier
     private final int enchantmentValue;
     private final LazyValue<Ingredient> repairIngredient;
 
-    ModItemTiers(int p_i48458_3_, int p_i48458_4_, float p_i48458_5_, float p_i48458_6_, int p_i48458_7_, Supplier<Ingredient> p_i48458_8_)
+    ModItemTiers(int harvestLevelIn, int maxUsesIn, float efficiencyIn, float attackDamageIn, int enchantabilityIn, Supplier<Ingredient> repairMaterialIn)
     {
-        this.level = p_i48458_3_;
-        this.uses = p_i48458_4_;
-        this.speed = p_i48458_5_;
-        this.damage = p_i48458_6_;
-        this.enchantmentValue = p_i48458_7_;
-        this.repairIngredient = new LazyValue<>(p_i48458_8_);
+        this.level = harvestLevelIn;
+        this.uses = maxUsesIn;
+        this.speed = efficiencyIn;
+        this.damage = attackDamageIn;
+        this.enchantmentValue = enchantabilityIn;
+        this.repairIngredient = new LazyValue<>(repairMaterialIn);
     }
 
-    public int getUses()
+    public int getMaxUses()
     {
         return this.uses;
     }
 
-    public float getSpeed()
+    public float getEfficiency()
     {
         return this.speed;
     }
 
-    public float getAttackDamageBonus()
+    public float getAttackDamage()
     {
         return this.damage;
     }
 
-    public int getLevel()
+    public int getHarvestLevel()
     {
         return this.level;
     }
 
-    public int getEnchantmentValue()
+    public int getEnchantability()
     {
         return this.enchantmentValue;
     }
 
-    public Ingredient getRepairIngredient()
+    public Ingredient getRepairMaterial()
     {
-        return this.repairIngredient.get();
+        return this.repairIngredient.getValue();
     }
 }

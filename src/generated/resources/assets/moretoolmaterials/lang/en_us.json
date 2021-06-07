@@ -1,13 +1,17 @@
 {
+  "item.moretoolmaterials.emerald_axe": "Emerald Axe",
   "item.moretoolmaterials.emerald_hoe": "Emerald Hoe",
   "item.moretoolmaterials.emerald_pickaxe": "Emerald Pickaxe",
   "item.moretoolmaterials.emerald_shovel": "Emerald Shovel",
+  "item.moretoolmaterials.lapis_axe": "Lapis Lazuli Axe",
   "item.moretoolmaterials.lapis_hoe": "Lapis Lazuli Hoe",
   "item.moretoolmaterials.lapis_pickaxe": "Lapis Lazuli Pickaxe",
   "item.moretoolmaterials.lapis_shovel": "Lapis Lazuli Shovel",
+  "item.moretoolmaterials.obsidian_axe": "Obsidian Axe",
   "item.moretoolmaterials.obsidian_hoe": "Obsidian Hoe",
   "item.moretoolmaterials.obsidian_pickaxe": "Obsidian Pickaxe",
   "item.moretoolmaterials.obsidian_shovel": "Obsidian Shovel",
+  "item.moretoolmaterials.redstone_axe": "Redstone Axe",
   "item.moretoolmaterials.redstone_hoe": "Redstone Hoe",
   "item.moretoolmaterials.redstone_pickaxe": "Redstone Pickaxe",
   "item.moretoolmaterials.redstone_shovel": "Redstone Shovel"
