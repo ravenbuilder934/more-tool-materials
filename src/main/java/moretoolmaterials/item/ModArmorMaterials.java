@@ -15,21 +15,21 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements IArmorMaterial
 {
-    EMERALD("emerald", 33, new int[]{3, 6, 8, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () ->
+    EMERALD("emerald", 33, new int[]{3, 6, 8, 3}, 15, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () ->
     {
-        return Ingredient.fromItems(Items.LEATHER);
+        return Ingredient.of(Items.LEATHER);
     }),
-    LAPIS("lapis", 30, new int[]{2, 5, 6, 2}, 30, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.5F, 0.0F, () ->
+    LAPIS("lapis", 30, new int[]{2, 5, 6, 2}, 30, SoundEvents.ARMOR_EQUIP_DIAMOND, 0.5F, 0.0F, () ->
     {
-        return Ingredient.fromItems(Items.IRON_INGOT);
+        return Ingredient.of(Items.IRON_INGOT);
     }),
-    OBSIDIAN("obsidian", 37, new int[]{3, 6, 8, 3}, 12, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () ->
+    OBSIDIAN("obsidian", 37, new int[]{3, 6, 8, 3}, 12, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () ->
     {
-        return Ingredient.fromItems(Items.IRON_INGOT);
+        return Ingredient.of(Items.IRON_INGOT);
     }),
-    REDSTONE("redstone", 27, new int[]{2, 5, 6, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.5F, 0.0F, () ->
+    REDSTONE("redstone", 27, new int[]{2, 5, 6, 2}, 9, SoundEvents.ARMOR_EQUIP_IRON, 0.5F, 0.0F, () ->
     {
-        return Ingredient.fromItems(Items.NETHERITE_INGOT);
+        return Ingredient.of(Items.NETHERITE_INGOT);
     });
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};
@@ -54,29 +54,29 @@ public enum ModArmorMaterials implements IArmorMaterial
         this.repairMaterial = new LazyValue<>(repairMaterial);
     }
 
-    public int getDurability(EquipmentSlotType slotIn)
+    public int getDurabilityForSlot(EquipmentSlotType slotIn)
     {
         return MAX_DAMAGE_ARRAY[slotIn.getIndex()] * this.maxDamageFactor;
     }
 
-    public int getDamageReductionAmount(EquipmentSlotType slotIn)
+    public int getDefenseForSlot(EquipmentSlotType slotIn)
     {
         return this.damageReductionAmountArray[slotIn.getIndex()];
     }
 
-    public int getEnchantability()
+    public int getEnchantmentValue()
     {
         return this.enchantability;
     }
 
-    public SoundEvent getSoundEvent()
+    public SoundEvent getEquipSound()
     {
         return this.soundEvent;
     }
 
-    public Ingredient getRepairMaterial()
+    public Ingredient getRepairIngredient()
     {
-        return this.repairMaterial.getValue();
+        return this.repairMaterial.get();
     }
 
     @OnlyIn(Dist.CLIENT)

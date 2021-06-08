@@ -11,19 +11,19 @@ public enum ModItemTiers implements IItemTier
 {
     EMERALD(3, 1561, 8.0F, 3.0F, 15, () ->
     {
-        return Ingredient.fromItems(Items.EMERALD);
+        return Ingredient.of(Items.EMERALD);
     }),
     LAPIS(2, 250, 7.0F, 2.5F, 25, () ->
     {
-        return Ingredient.fromItems(Items.LAPIS_LAZULI);
+        return Ingredient.of(Items.LAPIS_LAZULI);
     }),
     OBSIDIAN(4, 2031, 6.0F, 4.0F, 5, () ->
     {
-        return Ingredient.fromItems(Items.OBSIDIAN);
+        return Ingredient.of(Items.OBSIDIAN);
     }),
     REDSTONE(2, 250, 12.5F, 2.0F, 10, () ->
     {
-        return Ingredient.fromItems(Items.REDSTONE);
+        return Ingredient.of(Items.REDSTONE);
     });
 
     private final int level;
@@ -43,33 +43,33 @@ public enum ModItemTiers implements IItemTier
         this.repairIngredient = new LazyValue<>(repairMaterialIn);
     }
 
-    public int getMaxUses()
+    public int getUses()
     {
         return this.uses;
     }
 
-    public float getEfficiency()
+    public float getSpeed()
     {
         return this.speed;
     }
 
-    public float getAttackDamage()
+    public float getAttackDamageBonus()
     {
         return this.damage;
     }
 
-    public int getHarvestLevel()
+    public int getLevel()
     {
         return this.level;
     }
 
-    public int getEnchantability()
+    public int getEnchantmentValue()
     {
         return this.enchantmentValue;
     }
 
-    public Ingredient getRepairMaterial()
+    public Ingredient getRepairIngredient()
     {
-        return this.repairIngredient.getValue();
+        return this.repairIngredient.get();
     }
 }
