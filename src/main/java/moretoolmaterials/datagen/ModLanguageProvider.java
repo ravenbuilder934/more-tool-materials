@@ -1,6 +1,7 @@
 package moretoolmaterials.datagen;
 
 import moretoolmaterials.MoreToolMaterials;
+import moretoolmaterials.registry.ArmorRegistry;
 import moretoolmaterials.registry.ToolRegistry;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
@@ -40,6 +41,26 @@ public class ModLanguageProvider extends LanguageProvider
         addItem(ToolRegistry.LAPIS_HOE, "Lapis Lazuli Hoe");
         addItem(ToolRegistry.OBSIDIAN_HOE, "Obsidian Hoe");
         addItem(ToolRegistry.REDSTONE_HOE, "Redstone Hoe");
+
+        addItem(ArmorRegistry.EMERALD_HELMET, "Emerald Helmet");
+        addItem(ArmorRegistry.LAPIS_HELMET, "Lapis Lazuli Helmet");
+        addItem(ArmorRegistry.OBSIDIAN_HELMET, "Obsidian Helmet");
+        addItem(ArmorRegistry.REDSTONE_HELMET, "Redstone Helmet");
+
+        addItem(ArmorRegistry.EMERALD_CHESTPLATE, "Emerald Chestplate");
+        addItem(ArmorRegistry.LAPIS_CHESTPLATE, "Lapis Lazuli Chestplate");
+        addItem(ArmorRegistry.OBSIDIAN_CHESTPLATE, "Obsidian Chestplate");
+        addItem(ArmorRegistry.REDSTONE_CHESTPLATE, "Redstone Chestplate");
+
+        addItem(ArmorRegistry.EMERALD_LEGGINGS, "Emerald Leggings");
+        addItem(ArmorRegistry.LAPIS_LEGGINGS, "Lapis Lazuli Leggings");
+        addItem(ArmorRegistry.OBSIDIAN_LEGGINGS, "Obsidian Leggings");
+        addItem(ArmorRegistry.REDSTONE_LEGGINGS, "Redstone Leggings");
+
+        addItem(ArmorRegistry.EMERALD_BOOTS, "Emerald Boots");
+        addItem(ArmorRegistry.LAPIS_BOOTS, "Lapis Lazuli Boots");
+        addItem(ArmorRegistry.OBSIDIAN_BOOTS, "Obsidian Boots");
+        addItem(ArmorRegistry.REDSTONE_BOOTS, "Redstone Boots");
     }
 
 }

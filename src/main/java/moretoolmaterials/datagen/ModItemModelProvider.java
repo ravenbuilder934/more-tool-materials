@@ -1,6 +1,7 @@
 package moretoolmaterials.datagen;
 
 import moretoolmaterials.MoreToolMaterials;
+import moretoolmaterials.registry.ArmorRegistry;
 import moretoolmaterials.registry.ToolRegistry;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.item.Item;
@@ -46,11 +47,37 @@ public class ModItemModelProvider extends ItemModelProvider
         toolItem(ToolRegistry.LAPIS_HOE);
         toolItem(ToolRegistry.OBSIDIAN_HOE);
         toolItem(ToolRegistry.REDSTONE_HOE);
+
+        armorItem(ArmorRegistry.EMERALD_HELMET);
+        armorItem(ArmorRegistry.LAPIS_HELMET);
+        armorItem(ArmorRegistry.OBSIDIAN_HELMET);
+        armorItem(ArmorRegistry.REDSTONE_HELMET);
+
+        armorItem(ArmorRegistry.EMERALD_CHESTPLATE);
+        armorItem(ArmorRegistry.LAPIS_CHESTPLATE);
+        armorItem(ArmorRegistry.OBSIDIAN_CHESTPLATE);
+        armorItem(ArmorRegistry.REDSTONE_CHESTPLATE);
+
+        armorItem(ArmorRegistry.EMERALD_LEGGINGS);
+        armorItem(ArmorRegistry.LAPIS_LEGGINGS);
+        armorItem(ArmorRegistry.OBSIDIAN_LEGGINGS);
+        armorItem(ArmorRegistry.REDSTONE_LEGGINGS);
+
+        armorItem(ArmorRegistry.EMERALD_BOOTS);
+        armorItem(ArmorRegistry.LAPIS_BOOTS);
+        armorItem(ArmorRegistry.OBSIDIAN_BOOTS);
+        armorItem(ArmorRegistry.REDSTONE_BOOTS);
     }
 
     public void toolItem(Supplier<? extends Item> itemSupplier)
     {
         ResourceLocation location = itemSupplier.get().getRegistryName();
         this.getBuilder(location.getPath()).parent(new ModelFile.UncheckedModelFile("item/handheld")).texture("layer0", new ResourceLocation(location.getNamespace(), "item/" + location.getPath()));
+    }
+
+    public void armorItem(Supplier<? extends Item> itemSupplier)
+    {
+        ResourceLocation location = itemSupplier.get().getRegistryName();
+        this.getBuilder(location.getPath()).parent(new ModelFile.UncheckedModelFile("item/generated")).texture("layer0", new ResourceLocation(location.getNamespace(), "item/" + location.getPath()));
     }
 }

@@ -1,6 +1,7 @@
 package moretoolmaterials;
 
 import moretoolmaterials.datagen.GatherData;
+import moretoolmaterials.registry.ArmorRegistry;
 import moretoolmaterials.registry.ToolRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -17,6 +18,7 @@ public class MoreToolMaterials
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(GatherData::init);
         ToolRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        ArmorRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
     private void setup(final FMLCommonSetupEvent event)
