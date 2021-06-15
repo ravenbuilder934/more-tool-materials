@@ -1,7 +1,5 @@
 package moretoolmaterials.item;
 
-import java.util.function.Supplier;
-
 import moretoolmaterials.MoreToolMaterials;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
@@ -12,6 +10,8 @@ import net.minecraft.util.SoundEvents;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.Tags;
+
+import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements IArmorMaterial
 {
