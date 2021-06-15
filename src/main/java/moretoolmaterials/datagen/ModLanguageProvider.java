@@ -61,6 +61,8 @@ public class ModLanguageProvider extends LanguageProvider
         addItem(ArmorRegistry.LAPIS_BOOTS, "Lapis Lazuli Boots");
         addItem(ArmorRegistry.OBSIDIAN_BOOTS, "Obsidian Boots");
         addItem(ArmorRegistry.REDSTONE_BOOTS, "Redstone Boots");
+        
+        add("itemGroup." + MoreToolMaterials.MOD_ID, "More Tool Materials");
     }
 
 }

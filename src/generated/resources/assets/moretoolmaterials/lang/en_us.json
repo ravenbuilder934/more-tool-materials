@@ -34,5 +34,6 @@
   "item.moretoolmaterials.redstone_leggings": "Redstone Leggings",
   "item.moretoolmaterials.redstone_pickaxe": "Redstone Pickaxe",
   "item.moretoolmaterials.redstone_shovel": "Redstone Shovel",
-  "item.moretoolmaterials.redstone_sword": "Redstone Sword"
+  "item.moretoolmaterials.redstone_sword": "Redstone Sword",
+  "itemGroup.moretoolmaterials": "More Tool Materials"
 }
