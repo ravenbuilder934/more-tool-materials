@@ -1,29 +1,29 @@
 package moretoolmaterials.item;
 
+import java.util.function.Supplier;
+
 import net.minecraft.item.IItemTier;
-import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
-
-import java.util.function.Supplier;
+import net.minecraftforge.common.Tags;
 
 public enum ModItemTiers implements IItemTier
 {
     EMERALD(3, 1561, 8.0F, 3.0F, 15, () ->
     {
-        return Ingredient.of(Items.EMERALD);
+        return Ingredient.of(Tags.Items.GEMS_EMERALD);
     }),
     LAPIS(2, 250, 7.0F, 2.5F, 25, () ->
     {
-        return Ingredient.of(Items.LAPIS_LAZULI);
+        return Ingredient.of(Tags.Items.GEMS_LAPIS);
     }),
     OBSIDIAN(4, 2031, 6.0F, 4.0F, 5, () ->
     {
-        return Ingredient.of(Items.OBSIDIAN);
+        return Ingredient.of(Tags.Items.OBSIDIAN);
     }),
     REDSTONE(2, 250, 12.5F, 2.0F, 10, () ->
     {
-        return Ingredient.of(Items.REDSTONE);
+        return Ingredient.of(Tags.Items.DUSTS_REDSTONE);
     });
 
     private final int level;

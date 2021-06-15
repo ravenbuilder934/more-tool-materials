@@ -1,35 +1,35 @@
 package moretoolmaterials.item;
 
+import java.util.function.Supplier;
+
 import moretoolmaterials.MoreToolMaterials;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
-import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-
-import java.util.function.Supplier;
+import net.minecraftforge.common.Tags;
 
 public enum ModArmorMaterials implements IArmorMaterial
 {
     EMERALD("emerald", 33, new int[]{3, 6, 8, 3}, 15, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () ->
     {
-        return Ingredient.of(Items.LEATHER);
+        return Ingredient.of(Tags.Items.GEMS_EMERALD);
     }),
     LAPIS("lapis", 30, new int[]{2, 5, 6, 2}, 30, SoundEvents.ARMOR_EQUIP_DIAMOND, 0.5F, 0.0F, () ->
     {
-        return Ingredient.of(Items.IRON_INGOT);
+        return Ingredient.of(Tags.Items.GEMS_LAPIS);
     }),
     OBSIDIAN("obsidian", 37, new int[]{3, 6, 8, 3}, 12, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () ->
     {
-        return Ingredient.of(Items.IRON_INGOT);
+        return Ingredient.of(Tags.Items.OBSIDIAN);
     }),
     REDSTONE("redstone", 27, new int[]{2, 5, 6, 2}, 9, SoundEvents.ARMOR_EQUIP_IRON, 0.5F, 0.0F, () ->
     {
-        return Ingredient.of(Items.NETHERITE_INGOT);
+        return Ingredient.of(Tags.Items.DUSTS_REDSTONE);
     });
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};
