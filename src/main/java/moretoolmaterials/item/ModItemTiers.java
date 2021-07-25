@@ -1,13 +1,13 @@
 package moretoolmaterials.item;
 
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.util.LazyValue;
+import net.minecraft.util.LazyLoadedValue;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.Tags;
 
 import java.util.function.Supplier;
 
-public enum ModItemTiers implements IItemTier
+public enum ModItemTiers implements Tier
 {
     EMERALD(3, 1561, 8.0F, 3.0F, 15, () ->
     {
@@ -31,7 +31,7 @@ public enum ModItemTiers implements IItemTier
     private final float speed;
     private final float damage;
     private final int enchantmentValue;
-    private final LazyValue<Ingredient> repairIngredient;
+    private final LazyLoadedValue<Ingredient> repairIngredient;
 
     ModItemTiers(int harvestLevelIn, int maxUsesIn, float efficiencyIn, float attackDamageIn, int enchantabilityIn, Supplier<Ingredient> repairMaterialIn)
     {
@@ -40,7 +40,7 @@ public enum ModItemTiers implements IItemTier
         this.speed = efficiencyIn;
         this.damage = attackDamageIn;
         this.enchantmentValue = enchantabilityIn;
-        this.repairIngredient = new LazyValue<>(repairMaterialIn);
+        this.repairIngredient = new LazyLoadedValue<>(repairMaterialIn);
     }
 
     public int getUses()
